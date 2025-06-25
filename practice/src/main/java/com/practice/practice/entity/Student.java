@@ -12,7 +12,8 @@ public class Student {
     @GeneratedValue(strategy =GenerationType.IDENTITY)
     private int id;
     private String name;
-    private int age;
+    private Integer age;
+    @Column(unique = true)
     private String username;
     private String password;
 }
