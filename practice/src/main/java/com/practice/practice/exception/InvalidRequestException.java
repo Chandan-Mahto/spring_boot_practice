@@ -1,4 +1,7 @@
 package com.practice.practice.exception;
 
-public class InvalidRequestException {
+public class InvalidRequestException extends RuntimeException {
+    public InvalidRequestException(String message) {
+        super(message);
+    }
 }
